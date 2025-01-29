@@ -71,7 +71,7 @@ fun calculateLetterSpacing(fontSize: TextUnit, percentage: Float): TextUnit {
 }
 
 @Composable
-fun DotoritTypography(): DotoritTypography {
+fun dotoritTypography(): DotoritTypography {
     return DotoritTypography(
         headlineBold1 = TextStyle(
             fontFamily = PretendardBold,
