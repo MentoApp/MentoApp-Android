@@ -1,4 +1,4 @@
-package com.mentoapp.dotorit.presentation.ui.component
+package com.mentoapp.dotorit.presentation.login.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
