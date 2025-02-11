@@ -2,7 +2,7 @@
     <string name="app_name">도토릿</string>
 
     <!-- Login Screen -->
-    <string name="login_title">커리어 고민과 이야기들,\n도토릿에서 함께 나누고 성장해요!</string>
+    <string name="login_title">커리어 고민과 이야기들,\n도토릿에서 함께 나누고\n성장해요!</string>
     <string name="login_subtitle">IT 멘토링·커뮤니티</string>
     <string name="login_naver">네이버로 시작하기</string>
     <string name="login_kakao">카카오로 시작하기</string>
