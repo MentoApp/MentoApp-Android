@@ -1,5 +1,6 @@
 package com.mentoapp.dotorit.presentation.join.component
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -52,6 +53,9 @@ fun DefaultButton(
 @Composable
 private fun LoginButtonPreview() {
     DotoritTheme {
-        DefaultButton("다음")
+        Column {
+            DefaultButton(buttonText = "다음", enabled = false)
+            DefaultButton("다음")
+        }
     }
 }
