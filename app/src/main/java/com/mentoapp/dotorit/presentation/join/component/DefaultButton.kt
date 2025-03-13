@@ -20,10 +20,9 @@ import com.mentoapp.dotorit.presentation.ui.theme.dotoritTypography
 
 @Composable
 fun DefaultButton(
-    buttonText: String,
+    text: String,
     enabled: Boolean = true,
-    onClick: (Boolean) -> Unit = {},
-    modifier: Modifier = Modifier
+    onClick: (Boolean) -> Unit = {}
 ) {
     Button(
         onClick = { onClick(enabled) },
@@ -35,14 +34,13 @@ fun DefaultButton(
             disabledContentColor = Neutral400
         ),
         shape = RoundedCornerShape(8.dp),
-        modifier = modifier
+        modifier = Modifier
             .fillMaxWidth(),
         contentPadding = PaddingValues(0.dp)
     ) {
         Text(
-            modifier = modifier
-                .padding(horizontal = 70.dp, vertical = 15.dp),
-            text = buttonText,
+            text = text,
+            modifier = Modifier.padding(vertical = 15.dp),
             color = White,
             style = dotoritTypography().bodyMedium1
         )
@@ -54,7 +52,7 @@ fun DefaultButton(
 private fun LoginButtonPreview() {
     DotoritTheme {
         Column {
-            DefaultButton(buttonText = "다음", enabled = false)
+            DefaultButton(text = "다음", enabled = false)
             DefaultButton("다음")
         }
     }
