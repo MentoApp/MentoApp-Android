@@ -7,4 +7,10 @@
     <string name="login_naver">네이버로 시작하기</string>
     <string name="login_kakao">카카오로 시작하기</string>
     <string name="login_service_info">서비스 소개</string>
+
+    <!-- Join Screen -->
+    <string name="join_profile_title">반가워요!\n프로필을 설정해주세요.</string>
+    <string name="join_profile_nickname">닉네임</string>
+    <string name="join_profile_nickname_placeholder">최소 2자~최대 10자로 적어주세요.</string>
+    <string name="join_profile_next">다음</string>
 </resources>
