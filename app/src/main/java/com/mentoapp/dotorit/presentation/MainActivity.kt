@@ -14,12 +14,28 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.mentoapp.dotorit.presentation.splash.SplashScreen
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.lifecycle.lifecycleScope
+import com.mentoapp.dotorit.presentation.login.LoginScreen
 import com.mentoapp.dotorit.presentation.ui.theme.DotoritTheme
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        val splashScreen = installSplashScreen()
+        var keepSplashOnScreen = true
+        val delay = 3000L
+
+        splashScreen.setKeepOnScreenCondition { keepSplashOnScreen }
+
         super.onCreate(savedInstanceState)
+
+        lifecycleScope.launch {
+            delay(delay)
+            keepSplashOnScreen = false
+        }
+
         enableEdgeToEdge(
             statusBarStyle = SystemBarStyle.auto(Color.WHITE, Color.BLACK),
         )
@@ -34,7 +50,7 @@ class MainActivity : ComponentActivity() {
                             .fillMaxSize()
                             .padding(innerPadding)
                     ) {
-                        SplashScreen()
+                        LoginScreen()
                     }
                 }
             }
