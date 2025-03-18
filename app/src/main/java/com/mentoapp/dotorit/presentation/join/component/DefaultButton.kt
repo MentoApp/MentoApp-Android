@@ -14,7 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.mentoapp.dotorit.presentation.ui.theme.DotoritTheme
 import com.mentoapp.dotorit.presentation.ui.theme.Neutral400
-import com.mentoapp.dotorit.presentation.ui.theme.Neutral900
+import com.mentoapp.dotorit.presentation.ui.theme.Orange900
 import com.mentoapp.dotorit.presentation.ui.theme.White
 import com.mentoapp.dotorit.presentation.ui.theme.dotoritTypography
 
@@ -28,8 +28,8 @@ fun DefaultButton(
         onClick = { onClick(enabled) },
         enabled = enabled,
         colors = ButtonDefaults.buttonColors(
-            containerColor = Neutral900,
-            contentColor = Neutral900,
+            containerColor = Orange900,
+            contentColor = Orange900,
             disabledContainerColor = Neutral400,
             disabledContentColor = Neutral400
         ),
