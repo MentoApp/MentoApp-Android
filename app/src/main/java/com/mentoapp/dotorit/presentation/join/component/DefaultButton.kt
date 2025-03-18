@@ -10,6 +10,7 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.mentoapp.dotorit.presentation.ui.theme.DotoritTheme
@@ -42,7 +43,7 @@ fun DefaultButton(
             text = text,
             modifier = Modifier.padding(vertical = 15.dp),
             color = White,
-            style = dotoritTypography().bodyMedium1
+            style = dotoritTypography().bodyMedium1.copy(fontWeight = FontWeight.Bold)
         )
     }
 }
