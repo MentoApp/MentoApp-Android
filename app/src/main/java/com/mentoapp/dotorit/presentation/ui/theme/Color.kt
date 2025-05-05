@@ -36,3 +36,12 @@ val Orange50 = Color(0xFFFFF8E0)
 
 val StatusError = Color(0xFFFF1F00)
 val StatusConfirmed = Color(0xFF0095FF)
+
+// Profile background color
+
+val ProfileBackground1 = Color(0xFFDFD8D8)
+val ProfileBackground2 = Color(0xFFFFD79F)
+val ProfileBackground3 = Color(0xFFF6B3B3)
+val ProfileBackground4 = Color(0xFFBADFBB)
+val ProfileBackground5 = Color(0xFFB1C1EA)
+val ProfileBackground6 = Color(0xFFDBCBF1)
