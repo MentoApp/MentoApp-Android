@@ -31,6 +31,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -87,7 +88,7 @@ fun JoinProfileBottomSheet(
             modifier = Modifier.padding(20.dp)
         ) {
             Text(
-                text = "프로필 사진 설정",
+                text = stringResource(id = R.string.join_profile_bottom_sheet_title),
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(vertical = 8.dp),
                 textAlign = TextAlign.Center
@@ -100,12 +101,20 @@ fun JoinProfileBottomSheet(
                 Tab(
                     selected = selectedTabIndex == 0,
                     onClick = { selectedTabIndex = 0 },
-                    text = { Text("캐릭터") }
+                    text = {
+                        Text(
+                            text = stringResource(id = R.string.join_profile_bottom_sheet_character)
+                        )
+                    }
                 )
                 Tab(
                     selected = selectedTabIndex == 1,
                     onClick = { selectedTabIndex = 1 },
-                    text = { Text("내 사진") }
+                    text = {
+                        Text(
+                            text = stringResource(id = R.string.join_profile_bottom_sheet_photo)
+                        )
+                    }
                 )
             }
 
@@ -150,7 +159,7 @@ fun JoinProfileBottomSheet(
                     )
                 }
                 Text(
-                    text = " 다람쥐를 선택해주세요",
+                    text = stringResource(id = R.string.join_profile_bottom_sheet_character_1),
                     modifier = Modifier.padding(start = 4.dp),
                     style = dotoritTypography().bodyMedium1,
                     color = Neutral800
@@ -209,7 +218,7 @@ fun JoinProfileBottomSheet(
                     )
                 }
                 Text(
-                    text = " 배경 컬러를 선택해주세요",
+                    text = stringResource(id = R.string.join_profile_bottom_sheet_character_2),
                     modifier = Modifier.padding(start = 4.dp),
                     style = dotoritTypography().bodyMedium1,
                     color = Neutral800
@@ -242,7 +251,7 @@ fun JoinProfileBottomSheet(
             Spacer(modifier = Modifier.height(32.dp))
 
             DefaultButton(
-                text = "선택 완료",
+                text = stringResource(R.string.join_profile_bottom_sheet_submit),
             ) {
                 onDoneClick(hamsterImages[selectedHamsterIndex], bgColors[selectedBgColorIndex])
             }

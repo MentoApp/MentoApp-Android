@@ -13,4 +13,13 @@
     <string name="join_profile_nickname">닉네임</string>
     <string name="join_profile_nickname_placeholder">최소 2자~최대 10자로 적어주세요.</string>
     <string name="join_profile_next">다음</string>
+
+    <string name="join_profile_bottom_sheet_title">프로필 사진 설정</string>
+    <string name="join_profile_bottom_sheet_character">캐릭터</string>
+    <string name="join_profile_bottom_sheet_photo">내 사진</string>
+    <string name="join_profile_bottom_sheet_character_1">다람쥐를 선택해주세요</string>
+    <string name="join_profile_bottom_sheet_character_2">배경 컬러를 선택해주세요</string>
+    <string name="join_profile_bottom_sheet_take_photo">촬영하기</string>
+    <string name="join_profile_bottom_sheet_album">앨범 선택</string>
+    <string name="join_profile_bottom_sheet_submit">선택 완료</string>
 </resources>
